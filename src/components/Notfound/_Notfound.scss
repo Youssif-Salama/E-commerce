@@ -1,0 +1,14 @@
+@import "../Notfound/Notfound";
+
+.notFound {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    span{
+        color: $color_3;
+        font-size: 30px;
+        text-shadow: $color_1 2px 2px 2px;
+    }
+}

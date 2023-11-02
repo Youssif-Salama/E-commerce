@@ -1,0 +1,37 @@
+@import './colors.scss';
+.app{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+// some common styles
+a{
+    text-decoration: none;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    li{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        a{
+            text-decoration: none;
+        }
+    }
+}
+.active{
+    color: $color_2 !important;
+    border-bottom: 2px solid $color_2;
+}
+.smallSize{
+    font-size: 12px;
+}
+.midSize{
+    font-size: 14px;
+}
+.opacity{
+    opacity: 0.8;
+}

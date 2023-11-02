@@ -1,0 +1,19 @@
+@import './components/commonstyles/colors';
+@import './components/commonstyles/common';
+@import './components/Home/Home';
+@import './components/About/About';
+@import './components/Notfound/Notfound';
+@import './components/Cart/Cart';
+@import './components/Signin/Signin';
+@import './components/Signup/Signup';
+@import './components/Navbar/Navbar';
+@import "./components/Footer/Footer";
+@import './components/miniComponents/MainProduct/mainProduct';
+@import './components/miniComponents/MainProduct/SingleProduct/SingleProduct.scss';
+@import './components/miniComponents/Categories/Categories';
+@import './components/miniComponents/HomeMainSlider/HomeMainSlider';
+@import "./components/CheckSession/CheckSession";
+
+.app {
+    overflow: hidden;
+}

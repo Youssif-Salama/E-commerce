@@ -1,0 +1,85 @@
+.singleProduct{
+    a{
+        text-decoration: none;
+        color: #333;
+    }
+    .slick-dots {
+        top: 80%;
+        li button::before{
+            background-color: #00bfff74 !important;
+            border-radius: 50%;
+            color: #333 !important;
+            border: 2px solid #0003;
+        }
+        li.slick-active button::before{
+            background-color: #00Bfff !important;
+        }
+    }
+    width: 100%;
+    height: 100vh;
+    .backToHome{
+        a{
+            color: #00Bfff;
+        font-size: 20px;
+        }
+    }
+    *{
+        padding: 0.2rem;
+    }
+    .loader_container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .loader {
+        border-radius: 50%;
+        width: 2.5em;
+        height: 2.5em;
+        animation-fill-mode: both;
+        animation: bblFadInOut 1.8s infinite ease-in-out;
+        font-size: 7px;
+        position: relative;
+        text-indent: -9999em;
+        transform: translateZ(0);
+        animation-delay: -0.16s;
+        &:before {
+            border-radius: 50%;
+            width: 2.5em;
+            height: 2.5em;
+            animation-fill-mode: both;
+            animation: bblFadInOut 1.8s infinite ease-in-out;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -3.5em;
+            animation-delay: -0.32s;
+        }
+        &:after {
+            border-radius: 50%;
+            width: 2.5em;
+            height: 2.5em;
+            animation-fill-mode: both;
+            animation: bblFadInOut 1.8s infinite ease-in-out;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 3.5em;
+        }
+    }
+    .productImage{
+        div{
+            height: 400px;
+            img{
+                box-sizing: border-box;
+                object-fit: cover;
+            }
+        }
+    }
+    .productDetails{
+        .productBrandName{
+            color: #00Bfff;
+        }
+    }
+}

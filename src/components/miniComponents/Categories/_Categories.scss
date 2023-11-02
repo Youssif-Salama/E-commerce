@@ -1,0 +1,25 @@
+div {
+    .category-img {
+        object-fit: cover;
+        height: 200px;
+    }
+    .slick-dots {
+        li button::before{
+            background-color: #00bfff74 !important;
+            border-radius: 50%;
+            color: #333 !important;
+            border: 2px solid #0003;
+        }
+        li.slick-active button::before{
+            background-color: #00Bfff !important;
+        }
+    }
+}
+
+@media (max-width:440px) {
+    div {
+        h6 {
+            font-size: 6px;
+        }
+    }
+}

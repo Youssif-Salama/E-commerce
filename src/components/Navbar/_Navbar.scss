@@ -1,0 +1,179 @@
+@import '../commonstyles//colors';
+
+// styling nav bar while userToken is Null
+.navBar {
+    border-bottom: 5px solid $color_2;
+
+    * {
+        z-index: 20;
+    }
+
+    .container {
+        .logonull {
+            text-transform: uppercase;
+            color: $color_2;
+        }
+
+        .registrationLinksnull {
+
+            ul {
+                li {
+                    a {
+                        color: $background-color_1;
+                        transition: 0.2s all ease;
+                        font-size: 16px;
+
+                        &:hover {
+                            color: $color_2;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+//---------------------------------------------
+// styling nav bar while userToken is notNull
+.navBar {
+    .container {
+        .navMenu {
+            display: none;
+        }
+
+        .logonnull {
+            h1 {
+                a {
+                    text-decoration: none;
+                    color: $color_2;
+                }
+            }
+        }
+
+        .registrationLinksnull {
+            ul li i {
+                background-color: $background-color_2;
+                padding: 0.3rem 0.4rem;
+                border-radius: 50%;
+                color: $color_1;
+            }
+
+            ul li {
+                position: relative;
+
+                .logout {
+                    display: none;
+                    font-size: 14px;
+                    color: $color_1;
+                    position: absolute;
+                    top: 110%;
+                    right: 0;
+                    background-color: $background-color_3;
+                    padding: 0.5rem 1rem;
+                    transition: 0.3s all ease;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: $background-color_2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// responsivity
+@media (max-width:440px) {
+    .navMenu {
+        display: block;
+    }
+
+    .navBar {
+        .container {
+            .logonull {
+                text-align: center;
+            }
+
+            .registrationLinksnull {
+                display: none;
+            }
+        }
+    }
+
+    //-----------------------------------------------
+    .navBar {
+        .container {
+            .navMenu {
+                position: relative;
+                display: block;
+                color: $color_1;
+
+                i {
+                    font-size: 16px;
+                    background-color: $background-color_3;
+                    padding: 0.5rem 0.9rem;
+                    border-radius: 50%;
+                    transition: 0.3s all ease;
+
+                    &:hover {
+                        background-color: $background-color_4;
+                    }
+                }
+
+                .menuSideBar {
+                    position: absolute;
+                    top: 100%;
+                    left: -100%;
+                    z-index: 100;
+                    background-color: $background-color_3;
+
+                    ul {
+                        li {
+                            padding: 0.5rem 1rem;
+
+                            a {
+                                color: $color_1;
+                                position: relative;
+                            }
+                        }
+                    }
+
+                    .profile {
+                        a {
+                            text-decoration: none;
+                            color: $color_1;
+                        }
+                    }
+                }
+            }
+
+            .logonnull {
+                text-align: end;
+            }
+
+            .registrationLinksnull {
+                display: none;
+            }
+        }
+    }
+}
+
+// edit profilrIcon
+.profileList a {
+    padding-bottom: 0.5rem;
+}
+
+a.cart {
+    position: relative;
+
+    .cartCounter {
+        font-size: 10px;
+        background-color: $color_2;
+        border-radius: 50%;
+        padding: 0 0.3rem;
+        position: absolute;
+        top: 0;
+        right: -25%;
+    }
+}

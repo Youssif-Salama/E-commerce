@@ -1,0 +1,47 @@
+.product {
+    /* Add your existing styles here */
+
+    /* Set the parent container to position relative */
+    position: relative;
+    border: 3px solid #00Bfff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    border:{
+        bottom-left-radius:10px;
+        bottom-right-radius:10px;
+    }
+        text-decoration: none !important;
+        color: #333;
+}
+
+.product .cover_image {
+    /* Set the image container to position relative */
+    position: relative;
+    overflow: hidden;
+}
+
+.product .cover_image img {
+    /* Set the image to fill its container */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+    border: 2px solid #0003;
+    transition: linear 0.3s;
+}
+
+.product .cover_image:hover img {
+    /* Apply a scale transform on hover */
+    transform: scale(1.1);
+}
+.productName{
+    border-top: 2px solid #0003;
+}
+.productBtn {
+    border: 0;
+    outline: 0;
+    background-color: unset;
+    color: #fff;
+    background-color: #00Bfff;
+    padding: 0.5rem 0;
+}

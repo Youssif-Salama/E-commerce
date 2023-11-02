@@ -1,0 +1,27 @@
+@import '../commonstyles/colors';
+.footer {
+    background-color: $color_2;
+    text-transform: capitalize;
+    color: $color_3;
+    .logo {
+        a {
+            color: $color_3;
+            text-decoration: none;
+        }
+    }
+    .footerLinks{
+        
+        li{
+            list-style: none;
+            a{
+                padding: 0.2rem;
+                color:$color_3;
+                text-decoration: none;
+                font-weight: bold;
+                &:hover{
+                    color: #333;
+                }
+            }
+        }
+    }
+}

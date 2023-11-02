@@ -1,0 +1,139 @@
+@import "../commonstyles/colors";
+
+.noProducts {
+    height: 100vh;
+}
+
+.container {
+    padding: 1rem 0 !important;
+}
+
+.bg-color-1 {
+    background-color: $color_2;
+}
+
+.CartProduct {
+    margin: 0.5rem 0;
+    border: 4px double $color_2;
+
+    .headeOfMedia {
+        background-color: $color_2;
+    }
+
+    img {
+        box-sizing: border-box;
+    }
+
+    .middleProductMediaPart {
+        .productDetails {
+            p {
+                font-size: 20px;
+            }
+        }
+
+        .productModification {
+            border-radius: 10px;
+            overflow: hidden;
+
+            * {
+                color: $color_1;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: auto;
+            }
+
+            .add {
+                background-color: $color_2;
+            }
+
+            .count {
+                background-color: $color_2;
+            }
+
+            .remove {
+                background-color: $color_2;
+            }
+
+        }
+    }
+}
+
+@media (max-width:440px) {}
+
+// images styling
+.CartProduct {
+    .middleProductMediaPart {
+        .productDetails {
+            .brand_image {
+                img {}
+            }
+
+            .productImageAndDetails {
+                .productImage {
+                    overflow: hidden;
+                    padding: 1rem 2rem;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        max-width: 100% !important;
+                        height: auto !important;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:440px) {
+    .container {
+        padding: 0;
+
+        .CartProduct {
+
+            .middleProductMediaPart {
+                flex-direction: column !important;
+
+                .productDetails {
+                    margin: auto !important;
+                    padding: 1rem 0 !important;
+
+
+                    .productImageAndDetails {
+                        display: flex;
+                        flex-direction: column;
+
+                        .productImage {
+                            width: 100% !important;
+                        }
+
+                        .productDetails {
+                            width: 100% !important;
+                            padding: 0 0.5rem !important;
+                        }
+                    }
+                }
+
+                .productModification {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: row;
+                    width: 100% !important;
+
+                    * {
+                        margin: 0.2rem !important;
+                        padding: 1rem;
+                    }
+                }
+            }
+
+
+        }
+    }
+}

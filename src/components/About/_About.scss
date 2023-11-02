@@ -1,0 +1,17 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #00bfff37;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #fff;
+    container {
+        .content {
+            .techn {}
+
+            .aboutDetails {}
+        }
+    }
+}
